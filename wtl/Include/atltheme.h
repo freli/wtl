@@ -30,13 +30,7 @@
 	#error atltheme.h requires _WIN32_WINNT >= 0x0501
 #endif // (_WIN32_WINNT < 0x0501)
 
-#if defined(_WTL_USE_VSSYM32) || (defined(NTDDI_VERSION) && (NTDDI_VERSION >= NTDDI_LONGHORN))
-  #include <vssym32.h>
-#else
-  #ifndef TMSCHEMA_H
-  #include <tmschema.h>
-  #endif
-#endif
+#include <vssym32.h>
 
 #ifndef _UXTHEME_H_
 #include <uxtheme.h>
